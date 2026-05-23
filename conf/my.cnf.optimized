@@ -1,0 +1,13 @@
+[mysqld]
+innodb_buffer_pool_size = 4G
+innodb_buffer_pool_instances = 4
+innodb_log_file_size = 512M
+innodb_flush_log_at_trx_commit = 2
+innodb_flush_method = O_DIRECT
+query_cache_type = 0
+query_cache_size = 0
+max_connections = 500
+thread_cache_size = 50
+slow_query_log = ON
+slow_query_log_file = /var/log/mysql/slow.log
+long_query_time = 2
